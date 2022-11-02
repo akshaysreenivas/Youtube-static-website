@@ -286,6 +286,7 @@ nav {
   padding: 10px;
   margin-bottom: 30px;
   cursor: pointer;
+  width: 300px;
 }
 .video-div:hover {
   transform: scale(1.1);
