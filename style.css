@@ -1,23 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #615f5f;
-  font-size: 15px;
-  margin: 0 3px;
-}
-
-  /* scrollbar cofiguration ....  */
-
+/* scrollbar cofiguration ....  */
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -36,19 +28,19 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.video-types-buttons {
-
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+.categorys-buttons {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-.video-types-buttons::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+.categorys-buttons::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 /* navbar....  */
-nav {
+
+.navbar {
   display: flex;
-  /* gap: 12em; */
+  height: 56px;
   justify-content: space-between;
   position: fixed;
   z-index: 50;
@@ -58,7 +50,7 @@ nav {
   width: 100%;
   padding: 0 25px;
 }
-.align {
+.align-items-center {
   display: flex;
   align-items: center;
 }
@@ -69,7 +61,7 @@ nav {
   width: 115px;
   margin-left: 10px;
 }
-.search {
+.search-box {
   width: 500px;
   height: 40px;
   padding-left: 20px;
@@ -95,8 +87,7 @@ nav {
 .search-lens {
   width: 25px;
 }
-
-.mic-img-div {
+̥ .mic-img-div {
   margin: 0 15px;
   border: 1px;
   border-radius: 50%;
@@ -115,11 +106,6 @@ nav {
 .three-dot {
   height: 15px;
   margin-right: 10px;
-}
-.login {
-  display: flex;
-  align-items: center;
-  /* margin-left: auto;  */
 }
 .login-btn {
   display: flex;
@@ -189,8 +175,11 @@ nav {
   padding: 10px 20px;
 }
 .menu-div-a a {
-  font-size: small;
   cursor: pointer;
+  text-decoration: none;
+  color: #615f5f;
+  font-size: 15px;
+  margin: 0 3px;
 }
 .log {
   flex-flow: column;
@@ -209,6 +198,12 @@ nav {
   width: 32px;
   margin-right: 14px;
 }
+.footer-links {
+  text-decoration: none;
+  color: #615f5f;
+  font-size: 15px;
+  margin: 0 3px;
+}
 
 /* video catogeries section ...  */
 
@@ -218,7 +213,7 @@ nav {
   width: 100%;
   overflow: hidden;
 }
-.video-types-buttons {
+.categorys-buttons {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -234,34 +229,28 @@ nav {
   margin-bottom: 12px;
   margin-left: 1px;
   margin-right: 29px;
-  
 }
-.video-types-buttons::before{
- 
-  box-shadow: inset -25px 0px 25px 9px rgb(255 255 255);
-  content: '';
+.categorys-buttons::before {
+  box-shadow: -25px 0px 25px 9px rgb(255 255 255);
+  content: "";
   display: block;
-  height: 100%;
   position: absolute;
-  top: 0;
-  height: 132px;
-  right: 29px;
-  left: 700px;
+  top: 77px;
+  height: 50px;
+  right: 0;
+    width: 27px;
 }
-.video-types-buttons::after{
-  box-shadow: inset 60px 0px 25px -25px rgb(255 254 254);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  height: 132px;
-  right: 500px;
-  left: 285px;
-}
- /* width: 500px; */
-  
+.categorys-buttons::after {
+  box-shadow: 6px -2px 26px 5px rgb(255 255 255);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 77px;
+    height: 50px;
+    left: 273px;
+    width: 12px;
 
+}
 
 .type-button {
   padding: 8px;
@@ -275,11 +264,10 @@ nav {
 .type-button:hover {
   background-color: #ddd;
 }
-.type-button:first-child{
+.type-button:first-child {
   background-color: rgb(15, 15, 15);
   color: white;
 }
-
 
 /* videos section .....  */
 .video-div {
@@ -324,6 +312,12 @@ nav {
   width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.video-div a {
+  text-decoration: none;
+  color: #615f5f;
+  font-size: 13px;
+  margin: 0 3px;
 }
 .dec {
   display: flex;
